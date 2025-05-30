@@ -262,7 +262,7 @@
 </head>
 <body>
 
-<div class="container"> <h1>Horários das Linhas 🚍 704, 719 e 726</h1>
+<div class="container"> <h1>^Tô No Ponto 🚍 704, 719 e 726</h1>
 
     <div id="current-datetime"></div>
 
@@ -433,11 +433,11 @@
     function atualizarIconeFavorito() {
         let favoritos = JSON.parse(localStorage.getItem("favoritosLinha")) || [];
         if (favoritos.includes(linhaSelect.value)) {
-            btnFavoritoLinha.textContent = "💖"; // Coração preenchido para favorito
+            btnFavoritoLinha.textContent = "✔️"; // Check para favorito
             btnFavoritoLinha.classList.add("favorito");
             btnFavoritoLinha.setAttribute("aria-pressed", "true");
         } else {
-            btnFavoritoLinha.textContent = "⭐"; // Estrela para não favorito
+            btnFavoritoLinha.textContent = "➕"; // Mais para não favorito
             btnFavoritoLinha.classList.remove("favorito");
             btnFavoritoLinha.setAttribute("aria-pressed", "false");
         }
